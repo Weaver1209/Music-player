@@ -10,3 +10,4 @@ i built this to see if i could make a fully functional music player that runs en
 * **local storage**
 * **playlist ui**
  
+demo video of project:https://drive.google.com/file/d/1akR5Tk9ucV7P9NfQtIl3XLZiwjtQ1mbx/view?usp=sharing

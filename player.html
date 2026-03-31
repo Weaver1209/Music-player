@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Music player</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="track-name">No Song Selected</div>
+        
+        <div class="buttons">
+            <div class="prev-track" onclick="prevtrack()">
+                <img src="icons/prev.svg" alt="prev">
+            </div>
+            <div class="playpause-track" onclick="playpause()">
+                <img src="icons/play-pause.svg" alt="play/pause">
+            </div>
+            <div class="next-track" onclick="nexttrack()">
+                <img src="icons/next.svg" alt="next">
+            </div>
+            <div class="upload" onclick="triggerUpload()">
+                <img src="icons/upload.svg" alt="upload">
+            </div>
+            <div class="loop-track" onclick="toggleLoop()">
+                <img src="icons/loop.svg" alt="loop">
+            </div>
+            <div class="shuffle-track" onclick="toggleShuffle()">
+                <img src="icons/shuffle.svg" alt="shuffle">
+            </div>
+        </div>
+
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
+
+        <input type="file" id="file-upload" multiple accept="audio/*" style="display: none;" onchange="loadUploadedFiles(event)">
+    </div>
+        
+    <script src="index.js"></script>
+</body>
+</html>
